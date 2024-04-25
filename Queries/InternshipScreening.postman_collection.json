@@ -1,0 +1,2510 @@
+{
+	"info": {
+		"_postman_id": "4917b026-74bc-4385-9d37-b09f1584883e",
+		"name": "InternshipScreening",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30079197"
+	},
+	"item": [
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "roles_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"student\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/roles/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"roles",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "roles_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/roles/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"roles",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "roles_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/roles/a3309576-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"roles",
+								"a3309576-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "roles_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Incharge\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/roles/update/a33465b7-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"roles",
+								"update",
+								"a33465b7-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "roles_pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/roles/pagedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"roles",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "roles_rolepermission",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/roles/rolepermissions/a33465b7-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"roles",
+								"rolepermissions",
+								"a33465b7-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Role_lookup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/roles/lookup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"roles",
+								"lookup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "roles_rolepermission",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionIds\":[\"a371ddaf-5c20-11ee-802d-90b11c6fb6da\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/roles/rolepermissions/a33465b7-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"roles",
+								"rolepermissions",
+								"a33465b7-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Roles_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionIds\":[\"a371ddaf-5c20-11ee-802d-90b11c6fb6da\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/roles/delete/a33465b7-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"roles",
+								"delete",
+								"a33465b7-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Permissions",
+			"item": [
+				{
+					"name": "permissions_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"user-manage\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/permissions/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"permissions",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "permissions_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/permissions/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"permissions",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "permissions_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/permissions/a37c1ac5-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"permissions",
+								"a37c1ac5-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "permissions_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"permission-manage\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/permissions/update/a38d0ca9-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"permissions",
+								"update",
+								"a38d0ca9-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "permissions_pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/permissions/pagedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"permissions",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "roles_rolepermission",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/roles/rolepermissions/a33465b7-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"roles",
+								"rolepermissions",
+								"a33465b7-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "permissions_lookup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/permissions/lookup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"permissions",
+								"lookup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "permissions_userpermission",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionIds\":[\"a371ddaf-5c20-11ee-802d-90b11c6fb6da\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/permissions/userpermissions/a30a8296-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"permissions",
+								"userpermissions",
+								"a30a8296-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "permissions_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionIds\":[\"a371ddaf-5c20-11ee-802d-90b11c6fb6da\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/permissions/delete/a371ddaf-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"permissions",
+								"delete",
+								"a371ddaf-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "users_create",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"user-manage\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"student@gmail.com\",\r\n    \"phone\":\"+923486008173\",\r\n    \"roleIds\":[\"a33465b7-5c20-11ee-802d-90b11c6fb6da\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/a30a8296-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"a30a8296-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users_update",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":\"+923486081173\",\r\n    \"email\":\"abc@gmail.com\",\r\n    \"roleIDs\":[\"a3309576-5c20-11ee-802d-90b11c6fb6da\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/update/a31eb993-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"update",
+								"a31eb993-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":\"+923486081173\",\r\n    \"email\":\"abc@gmail.com\",\r\n    \"roleIds\":[\"a3309576-5c20-11ee-802d-90b11c6fb6da\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/update/a31eb993-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"update",
+								"a31eb993-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users_pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/pagedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users_userpermission",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/userpermissions/a3229616-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"userpermissions",
+								"a3229616-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users_userpermission",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionIds\":[\"a371ddaf-5c20-11ee-802d-90b11c6fb6da\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/userpermissions/a30a8296-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"userpermissions",
+								"a30a8296-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionIds\":[\"a371ddaf-5c20-11ee-802d-90b11c6fb6da\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/delete/f8df93e1-1015-47b3-bd71-a993dcb2165e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"delete",
+								"f8df93e1-1015-47b3-bd71-a993dcb2165e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "auth-login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"student@vu.edu.pk\",\r\n    \"password\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth-verifyaccount",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"abc@1122\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/verifyaccount/$2b$10$T2v2xelzFa3cZTv-OSxgze",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"verifyaccount",
+								"$2b$10$T2v2xelzFa3cZTv-OSxgze"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth-signout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"abc@1122\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/signout/44d5e660-8e77-4d96-98ab-d6cb127a9ca3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signout",
+								"44d5e660-8e77-4d96-98ab-d6cb127a9ca3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Batches",
+			"item": [
+				{
+					"name": "batches_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Batch17\",\r\n    \"is_current\":true,\r\n    \"registration_status\":true,\r\n    \"start_date\":\"2024-07-01\",\r\n    \"end_date\":\"2025-07-01\",\r\n    \"semester_for_start_date_id\":\"a65ad4a9-5c20-11ee-802d-90b11c6fb6da\",\r\n    \"semester_for_end_date_id\":\"a65eb441-5c20-11ee-802d-90b11c6fb6da\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/batches/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"batches",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "batches_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Batch17\",\r\n    \"is_current\":true,\r\n    \"registration_status\":true,\r\n    \"start_date\":\"2024-07-01\",\r\n    \"end_date\":\"2025-07-01\",\r\n    \"semester_for_start_date_id\":\"a65ad4a9-5c20-11ee-802d-90b11c6fb6da\",\r\n    \"semester_for_end_date_id\":\"a65eb441-5c20-11ee-802d-90b11c6fb6da\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/batches/update/a66444f6-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"batches",
+								"update",
+								"a66444f6-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "batches_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/batches/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"batches",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "batches_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/batches/09356d16-c66e-4ad3-b336-bd4f394b2175",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"batches",
+								"09356d16-c66e-4ad3-b336-bd4f394b2175"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "batches_pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/batches/pagedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"batches",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "batches_lookup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/batches/lookup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"batches",
+								"lookup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "batches_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/batches/delete/09356d16-c66e-4ad3-b336-bd4f394b2175",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"batches",
+								"delete",
+								"09356d16-c66e-4ad3-b336-bd4f394b2175"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Degrees",
+			"item": [
+				{
+					"name": "degrees_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"BS Compute Science\",\r\n    \"subjectsIDs\":[\"a50b0e3f-5c20-11ee-802d-90b11c6fb6da\"]\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/degrees/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"degrees",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "degrees_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"BS Compute Sciencee\",\r\n    \"subjectsIDs\":[\"a50b0e3f-5c20-11ee-802d-90b11c6fb6da\"]\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/degrees/update/a46d9767-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"degrees",
+								"update",
+								"a46d9767-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "degrees_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/degrees/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"degrees",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "degrees_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/degrees/e0218b01-7f76-45c4-877c-7b60c9230b34",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"degrees",
+								"e0218b01-7f76-45c4-877c-7b60c9230b34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "degrees_pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/degrees/pagedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"degrees",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "degrees_lookup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/degrees/lookup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"degrees",
+								"lookup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "batches_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/degrees/delete/e0218b01-7f76-45c4-877c-7b60c9230b34",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"degrees",
+								"delete",
+								"e0218b01-7f76-45c4-877c-7b60c9230b34"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "students_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vuid\":\"bc180403251\",\r\n    \"degreeId\":[\"a46d9767-5c20-11ee-802d-90b11c6fb6da\"],\r\n    \"name\":\"Mohsan\",\r\n    \"cnic\":\"35403-5757800-9\",\r\n    \"phone\":\"+92486081173\",\r\n    \"email\":\"bc180403251mha@vu.edu.pk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/students/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"students",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vuid\":\"bc180403251\",\r\n    \"degreeId\":[\"a46d9767-5c20-11ee-802d-90b11c6fb6da\"],\r\n    \"name\":\"Mohsan\",\r\n    \"cnic\":\"35403-5757800-9\",\r\n    \"phone\":\"+92486081173\",\r\n    \"email\":\"bc180403251mha@vu.edu.pk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/students/update/b1a3e5e0-4d49-4cdb-8bd8-e26bcef83105",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"students",
+								"update",
+								"b1a3e5e0-4d49-4cdb-8bd8-e26bcef83105"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/students/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"students",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/students/b1a3e5e0-4d49-4cdb-8bd8-e26bcef83105",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"students",
+								"b1a3e5e0-4d49-4cdb-8bd8-e26bcef83105"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students_pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/students/pagedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"students",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students_lookup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/students/lookup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"students",
+								"lookup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/students/delete/50520173-5de6-11ee-89ef-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"students",
+								"delete",
+								"50520173-5de6-11ee-89ef-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Semesters",
+			"item": [
+				{
+					"name": "semesters_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Fall2024\",\r\n    \"start_date\":\"2023-09-26\",\r\n    \"end_date\":\"2023-09-26\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/semesters/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"semesters",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "semesters_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Fall2024\",\r\n    \"start_date\":\"2024-09-26\",\r\n    \"end_date\":\"2025-02-26\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/semesters/update/7b637866-4d9b-481a-93bc-96043020ae26",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"semesters",
+								"update",
+								"7b637866-4d9b-481a-93bc-96043020ae26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "semesters_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/semesters/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"semesters",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "semesters_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/semesters/7b637866-4d9b-481a-93bc-96043020ae26",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"semesters",
+								"7b637866-4d9b-481a-93bc-96043020ae26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "semesters_pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/semesters/pagedata?page=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"semesters",
+								"pagedata"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students_lookup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/semesters/lookup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"semesters",
+								"lookup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "semesters_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/semesters/delete/7b637866-4d9b-481a-93bc-96043020ae26",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"semesters",
+								"delete",
+								"7b637866-4d9b-481a-93bc-96043020ae26"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subjects",
+			"item": [
+				{
+					"name": "subjects_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"CS601\",\r\n    \"title\":\"Data Comunications\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/subjects/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"subjects",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subjects_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"CS601\",\r\n    \"title\":\"Data Comunications\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/subjects/update/97979511-a0dd-48fd-90b1-05f6183356d4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"subjects",
+								"update",
+								"97979511-a0dd-48fd-90b1-05f6183356d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subjects_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/subjects/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"subjects",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subjects_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/subjects/a4dfcb28-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"subjects",
+								"a4dfcb28-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subects_pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/subjects/pagedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"subjects",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subjects_lookup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/subjects/lookup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"subjects",
+								"lookup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subjects_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/subjects/delete/97979511-a0dd-48fd-90b1-05f6183356d4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"subjects",
+								"delete",
+								"97979511-a0dd-48fd-90b1-05f6183356d4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cities",
+			"item": [
+				{
+					"name": "cities_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"multan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cities/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cities",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cities_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"sangla hill\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cities/update/701f9889-6755-11ee-9cfe-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cities",
+								"update",
+								"701f9889-6755-11ee-9cfe-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cities_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cities/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cities",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cities_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cities/a7c698db-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cities",
+								"a7c698db-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cities_pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cities/pagedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cities",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cities_lookup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cities/lookup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cities",
+								"lookup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subjects_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cities/delete/a7a6b86c-5c20-11ee-802d-90b11c6fb6da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cities",
+								"delete",
+								"a7a6b86c-5c20-11ee-802d-90b11c6fb6da"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Eligibility_Criterias",
+			"item": [
+				{
+					"name": "eligibilityCriterias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"formdata": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/eligibilityCriterias/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"eligibilityCriterias",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cities_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"CS601\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cities/update/97979511-a0dd-48fd-90b1-05f6183356d4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cities",
+								"update",
+								"97979511-a0dd-48fd-90b1-05f6183356d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eligibilityCriterias_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/eligibilityCriterias/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"eligibilityCriterias",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eligibilityCriterias_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/eligibilityCriterias/eaf439f3-0a7e-42b8-a657-ab77e390a581",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"eligibilityCriterias",
+								"eaf439f3-0a7e-42b8-a657-ab77e390a581"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eligibilityCriterias_pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/eligibilityCriterias/pagedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"eligibilityCriterias",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cities_lookup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cities/lookup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cities",
+								"lookup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eligibilityCriterias_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/eligibilityCriterias/delete/d9636606-a0b0-410b-9381-95b165e27b8a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"eligibilityCriterias",
+								"delete",
+								"d9636606-a0b0-410b-9381-95b165e27b8a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student_Registration",
+			"item": [
+				{
+					"name": "studentRegistrations_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"f8df93e1-1015-47b3-bd71-a993dcb2165e\",\r\n  \"batchId\": \"a6e80aa0-5c20-11ee-802d-90b11c6fb6da\",\r\n  \"degreeId\":\"a49d0591-5c20-11ee-802d-90b11c6fb6da\",\r\n  \"cityId\":\"a7c698db-5c20-11ee-802d-90b11c6fb6da\",\r\n  \"cgpa\": 3.0,\r\n  \"isEnrolledInProject\":true,\r\n\r\n   \"registeredSubjects\":[\r\n    {\"id\": \"a4dfcb28-5c20-11ee-802d-90b11c6fb6da\",\r\n      \"grade\": \"A+\"\r\n    },\r\n    {\"id\": \"a4e4df99-5c20-11ee-802d-90b11c6fb6da\",\r\n      \"grade\": \"B\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/studentRegistrations/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"studentRegistrations",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cities_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"CS601\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cities/update/97979511-a0dd-48fd-90b1-05f6183356d4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cities",
+								"update",
+								"97979511-a0dd-48fd-90b1-05f6183356d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "studentRegistrations_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/studentRegistrations/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"studentRegistrations",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "studentRegistrations_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/studentRegistrations/eaf439f3-0a7e-42b8-a657-ab77e390a581",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"studentRegistrations",
+								"eaf439f3-0a7e-42b8-a657-ab77e390a581"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "studentRegistrations_pagedata",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/studentRegistrations/pagedata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"studentRegistrations",
+								"pagedata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cities_lookup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/cities/lookup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cities",
+								"lookup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "studentRegistrations_delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/studentRegistrations/delete/d9636606-a0b0-410b-9381-95b165e27b8a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"studentRegistrations",
+								"delete",
+								"d9636606-a0b0-410b-9381-95b165e27b8a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
